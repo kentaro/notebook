@@ -916,6 +916,47 @@ version = "2.2.0"
 
 [[package]]
 category = "main"
+description = "TensorFlow is an open source machine learning framework for everyone."
+name = "tensorflow-gpu"
+optional = false
+python-versions = "*"
+version = "2.2.0"
+
+[package.dependencies]
+absl-py = ">=0.7.0"
+astunparse = "1.6.3"
+gast = "0.3.3"
+google-pasta = ">=0.1.8"
+grpcio = ">=1.8.6"
+h5py = ">=2.10.0,<2.11.0"
+keras-preprocessing = ">=1.1.0"
+numpy = ">=1.16.0,<2.0"
+opt-einsum = ">=2.3.2"
+protobuf = ">=3.8.0"
+six = ">=1.12.0"
+tensorboard = ">=2.2.0,<2.3.0"
+tensorflow-gpu-estimator = ">=2.2.0,<2.3.0"
+termcolor = ">=1.1.0"
+wrapt = ">=1.11.1"
+
+[package.dependencies.scipy]
+python = ">=3"
+version = "1.4.1"
+
+[package.dependencies.wheel]
+python = ">=3"
+version = ">=0.26"
+
+[[package]]
+category = "main"
+description = "TensorFlow Estimator."
+name = "tensorflow-gpu-estimator"
+optional = false
+python-versions = "*"
+version = "2.2.0"
+
+[[package]]
+category = "main"
 description = "ANSII Color formatting for output in terminal."
 name = "termcolor"
 optional = false
@@ -1018,7 +1059,7 @@ python-versions = "*"
 version = "1.12.1"
 
 [metadata]
-content-hash = "149ac7ee0f75e3e86971cd2495dd64def51c1d943fe86c5fe938e933256212e2"
+content-hash = "d9c3b8768e3116ea933627f511be44ee3e407143570b75035a7626f45033069a"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -1566,6 +1607,19 @@ tensorflow = [
 ]
 tensorflow-estimator = [
     {file = "tensorflow_estimator-2.2.0-py2.py3-none-any.whl", hash = "sha256:d09dacdd127f2579cea8d5af21f4a918036b8ae246adc82f26b61f91cc247dc2"},
+]
+tensorflow-gpu = [
+    {file = "tensorflow_gpu-2.2.0-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:3cd3fa2b13a505902704a63d6b2f256cdc85ddfd6c70dc7093796b7e490d09c4"},
+    {file = "tensorflow_gpu-2.2.0-cp35-cp35m-win_amd64.whl", hash = "sha256:453f0e3d8e56c47f4b374fba17cb5e0b57afbe34cd17f565b5498b5a0ccf33ac"},
+    {file = "tensorflow_gpu-2.2.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:f0b37fc5847987c1ca4f453273667497782a8920716a804f66247e0c095fef38"},
+    {file = "tensorflow_gpu-2.2.0-cp36-cp36m-win_amd64.whl", hash = "sha256:b706f0ed98d3c216ad65272c3a08a92f6fe7e38f57b54d3f9b5800043600e215"},
+    {file = "tensorflow_gpu-2.2.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:4c698dc157ba74aa69fc7bb41669f4f34f63f07bd722dd3b5aea33458a660066"},
+    {file = "tensorflow_gpu-2.2.0-cp37-cp37m-win_amd64.whl", hash = "sha256:5853b595cf82f803d3dddc9b9c00996a514dcfc831d2f899f0bb8073795f6301"},
+    {file = "tensorflow_gpu-2.2.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:845f261b0b922740bdd7f21fa3a4bed8ffd9e1712decd552fb33621da4d8ec45"},
+    {file = "tensorflow_gpu-2.2.0-cp38-cp38-win_amd64.whl", hash = "sha256:ba1e16249cf9aa4057d0af443df493f8a1683be113703f6d7f184f144ac673e4"},
+]
+tensorflow-gpu-estimator = [
+    {file = "tensorflow_gpu_estimator-2.2.0-py2.py3-none-any.whl", hash = "sha256:c40613850d3e8f99f0bbe5384fb222520b6c125f0723ef7cf05acad1783bf712"},
 ]
 termcolor = [
     {file = "termcolor-1.1.0.tar.gz", hash = "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"},
